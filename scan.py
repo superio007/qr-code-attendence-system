@@ -23,7 +23,7 @@ while True:
         tStr = time_now.strftime("%H:%M:%S")
         break
     cv2.imshow("QRCODEscanner", img)   
-    if cv2.waitKey(1) == 13:
+    if cv2.waitKey(1) == ord("q"):
         break
 
 mycursor= mydb.cursor()
